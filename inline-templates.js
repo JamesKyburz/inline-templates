@@ -14,7 +14,9 @@ global.templates = function(options) {
   files = glob.sync("" + options.template_path + "/**/*.*");
   templates = _.reduce(files, function(result, fn) {
     var id;
-    id = fn.toString().replace(options.template_path, '');
+    id = fn.replace(options.template_path, '')
+           .replace(/\//g, '-')
+           .split('.')[0];
     result.push("<script id=\"" + id + "\" type=\"" + options.type + "\">\n" + (fs.readFileSync(fn)) + "\n</script>");
     return result;
   }, []);
