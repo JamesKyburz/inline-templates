@@ -1,0 +1,15 @@
+{
+    "name" : "inline-templates"
+  , "description" : "Inline script templates for layout"
+  , "version" : "0.0.1"
+  , "author" : "James Kyburz <james.kyburz@gmail.com>"
+  , "engines" : ["node"]
+   ,"keywords": ["inline", "templates", "x-text", "micro"]
+  , "repository" : { "type":"git" , "url":"https://github.com/JamesKyburz/inline-templates" }
+  , "dependencies" : {
+      "underscore" : ">=1.3.1"
+    , "glob" : ">=3.0.1"
+  }
+  , "main": "inline-templates.js"
+}
+
