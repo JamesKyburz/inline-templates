@@ -11,7 +11,7 @@ global.templates = function(options) {
     template_path: './templates/',
     type: 'text/x-template'
   }, options);
-  files = glob.sync("" + options.template_path + "/*");
+  files = glob.sync("" + options.template_path + "/**/*.*");
   templates = _.reduce(files, function(result, fn) {
     var id;
     id = fn.toString().replace(options.template_path, '');
