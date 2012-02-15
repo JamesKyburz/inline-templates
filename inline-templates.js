@@ -17,7 +17,7 @@ global.templates = function(options) {
     id = fn.replace(options.template_path, '')
            .replace(/\//g, '-')
            .split('.')[0];
-    result.push("<script id=\"" + id + "\" type=\"" + options.type + "\">\n" + (fs.readFileSync(fn)) + "\n</script>");
+    result.push("<script id=\"" + "template-" + id + "\" type=\"" + options.type + "\">\n" + (fs.readFileSync(fn)) + "\n</script>");
     return result;
   }, []);
   return templates.join("\n");
