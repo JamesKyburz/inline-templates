@@ -1,7 +1,7 @@
 {
     "name" : "inline-templates"
   , "description" : "Inline script templates for layout"
-  , "version" : "0.0.1"
+  , "version" : "0.0.2"
   , "author" : "James Kyburz <james.kyburz@gmail.com>"
   , "engines" : ["node"]
    ,"keywords": ["inline", "templates", "x-text", "micro"]
