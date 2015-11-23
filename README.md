@@ -1,3 +1,4 @@
+# This repository is no longer maintained.
 inline-templates adds a helper function called templates for your layout
 file.
 
